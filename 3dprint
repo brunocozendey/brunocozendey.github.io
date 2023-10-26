@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printer Costs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>3D Printer costs</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+<!--             <li><a href="#">Products</a></li> -->
+<!--             <li><a href="#">Services</a></li> -->
+<!--             <li><a href="#">About Us</a></li> -->
+            <li><a href="https://www.linkedin.com/in/brunocozendey/" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <div class="printer-image">
+            <img src="https://static.wixstatic.com/media/87ccc0_a0341638f6eb4c91992cdf150ed082ee~mv2.png/v1/fill/w_500,h_500,al_c,q_85,enc_auto/87ccc0_a0341638f6eb4c91992cdf150ed082ee~mv2.png" alt="3D Printer">
+        </div>
+        <div class="printer-description">
+            <h2>Ender 3 V2 Costs</h2>
+            <p>
+                Calcule os custos de impressão com a sua impressora Ender 3 V2
+            </p>
+          	<p>
+              <label for="pla_cost">Custo PLA [g]:</label>
+   						<input type="number" step="0.01" id="pla_cost" value="0.11"/>
+          	</p>
+          	<p>
+    					<label for="power_cost">Custo Luz [R$/KWh]:</label>
+						  <input type="number" step="0.01" id="power_cost" value="1.15"/>
+         		</p>
+          	<p>
+          		<label for="print_time">Tempo impressão [h]:</label>
+						 	<input type="number" step="0.01" id="print_time" />
+            </p>
+          	<p>
+          		<label for="weight">Peso peça [g]:</label>
+						  <input type="number" step="0.01" id="weight" />
+						</p>
+              <button onclick="calculate()" class="gray-yellow-button">Calculate</button>
+    		<p id="cost">Custo R$: </p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contato</h2>
+        <p>Se tiver qualquer dúvida entre em contato =)</p>
+        <a href="https://www.linkedin.com/in/brunocozendey">Contact Us</a>
+    </section>
+</body>
+</html>
