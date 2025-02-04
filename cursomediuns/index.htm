@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333;
+        }
+        header {
+            background-color: #003366; /* Navy blue header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366; /* Navy blue links */
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #002244; /* Slightly darker navy blue on hover */
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white; /* White content background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            color: #003366; /* Navy blue headings */
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        .map-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px; /* Smaller map for mobile */
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #003366; /* Navy blue footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #003366; /* Navy blue links */
+        }
+        ul li a:hover {
+            text-decoration: underline;
+            color: #002244; /* Slightly darker navy blue on hover */
+        }
+        .section-divider {
+            margin: 40px 0;
+            border-top: 2px solid #003366; /* Navy blue divider */
+            opacity: 0.3;
+        }
+        .expandable {
+            margin: 20px 0;
+        }
+        .expandable button {
+            background-color: #003366; /* Navy blue button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .expandable button:hover {
+            background-color: #002244; /* Slightly darker navy blue on hover */
+        }
+        .expandable .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #003366;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            iframe {
+                height: 200px; /* Smaller map for mobile */
+            }
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Estudos Mediúnicos Centro Espírita</h1>
+    </header>
+
+    <nav>
+        <a href="#cursos">Curso de médiuns</a>
+        <a href="#livros">Livros</a>
+        <a href="#artigos">Artigos Científicos</a>
+        <a href="#videos">Videos</a>
+    </nav>
+
+    <div class="content">
+        <section id="cursos">
+            <h2>Curso Médiuns</h2>
+            <p>Os arquivos aqui publicados não são de autoria ou responsabilidade do autor do site e estão publicados na internet:</p>
+            <div class="expandable">
+                <button onclick="toggleText()">Read More</button>
+                <div class="hidden-text" id="hiddenText">
+                    <p>We offer a variety of programs, including meditation sessions, yoga classes, and spiritual workshops. Our community is dedicated to helping you find inner peace and balance in your life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <section id="livros">
+            <h2>Livros</h2>
+            <p>Os arquivos aqui publicados não são de autoria ou responsabilidade do autor do site e estão publicados na internet:</p>            <ul>
+                <li><a href="https://www.example.com/meditation" target="_blank">Meditation Guides</a></li>
+                <li><a href="https://www.example.com/yoga" target="_blank">Yoga Practices</a></li>
+                <li><a href="https://www.example.com/books" target="_blank">Spiritual Books</a></li>
+            </ul>
+        </section>
+                <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <section id="artigos">
+            <h2>Artigos</h2>
+            <p>Os arquivos aqui publicados não são de autoria ou responsabilidade do autor do site e estão publicados na internet:</p>            <ul>
+                <li><a href="https://www.example.com/meditation" target="_blank">Meditation Guides</a></li>
+                <li><a href="https://www.example.com/yoga" target="_blank">Yoga Practices</a></li>
+                <li><a href="https://www.example.com/books" target="_blank">Spiritual Books</a></li>
+            </ul>
+        </section>
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Os arquivos aqui publicados não são de autoria ou responsabilidade do autor do site e estão publicados na internet:</p>            <ul>
+                <li><a href="https://www.example.com/meditation" target="_blank">Meditation Guides</a></li>
+                <li><a href="https://www.example.com/yoga" target="_blank">Yoga Practices</a></li>
+                <li><a href="https://www.example.com/books" target="_blank">Spiritual Books</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleText() {
+            const hiddenText = document.getElementById("hiddenText");
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "block";
+            } else {
+                hiddenText.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
